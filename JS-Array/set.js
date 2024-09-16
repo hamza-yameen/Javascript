@@ -196,6 +196,7 @@ const setB = new Set([3, 4, 5, 6]);
 
 // Union
 const unionA = new Set([...setA, ...setB]);
+console.log("Cehck....", [...setA]);
 console.log("unionA : ", unionA);
 
 // Intersection
@@ -206,7 +207,7 @@ console.log("intersectionA : ", intersectionA);
 const differenceA = new Set([...setA].filter((sa) => !setB.has(sa)));
 console.log("differenceA : ", differenceA);
 
-console.log("---------------------------------------------- 12 ");
+console.log("---------------------------------------------- 12");
 
 // Real-time User Session Management
 class SessionManager {
