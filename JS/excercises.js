@@ -119,4 +119,58 @@ console.log(
 );
 // Max Age Person: Peter, Min Age Person: Lucy
 
-console.log("---------------------------------------------- 4");
+console.log("---------------------------------------------- 4");\
+
+const arr44 = [
+	{ name: "John", age: 25 },
+	{ name: "Jane", age: 22 },
+	{ name: "Peter", age: 30 },
+	{ name: "Lucy", age: 19 },
+];
+const maxAgePerson = arr44.reduce(
+	(max, person) => (person.age > max.age ? person : max),
+	arr44[0]
+);
+const minAgePerson = arr44.reduce(
+	(min, person) => (person.age < min.age ? person : min),
+	arr44[0]
+);
+console.log(
+	`Max Age Person: ${maxAgePerson.name}, Min Age Person: ${minAgePerson.name}`
+);
+
+const arr44 = [
+	{ name: "John", age: 25 },
+	{ name: "Jane", age: 22 },
+	{ name: "Peter", age: 30 },
+	{ name: "Lucy", age: 19 },
+];
+const maxAgePerson = arr44.reduce(
+	(max, person) => (person.age > max.age ? person : max),
+	arr44[0]
+);
+const minAgePerson = arr44.reduce(
+	(min, person) => (person.age < min.age ? person : min),
+	arr44[0]
+);
+console.log(
+	`Max Age Person: ${maxAgePerson.name}, Min Age Person: ${minAgePerson.name}`
+);
+
+const arr44 = [
+	{ name: "John", age: 25 },
+	{ name: "Jane", age: 22 },
+	{ name: "Peter", age: 30 },
+	{ name: "Lucy", age: 19 },
+];
+const maxAgePerson = arr44.reduce(
+	(max, person) => (person.age > max.age ? person : max),
+	arr44[0]
+);
+const minAgePerson = arr44.reduce(
+	(min, person) => (person.age < min.age ? person : min),
+	arr44[0]
+);
+console.log(
+	`Max Age Person: ${maxAgePerson.name}, Min Age Person: ${minAgePerson.name}`
+);
