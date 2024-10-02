@@ -120,3 +120,72 @@ console.log(
 // Max Age Person: Peter, Min Age Person: Lucy
 
 console.log("---------------------------------------------- 4");
+
+// Sorting by Multiple Properties
+
+const arr3 = [
+	{ name: "John", age: 25 },
+	{ name: "Jane", age: 22 },
+	{ name: "Peter", age: 30 },
+	{ name: "John", age: 20 },
+];
+
+const resArr3 = arr3.sort((a, b) => {
+	if (a.name === b.name) {
+		return a.age - b.age;
+	}
+	return a.name.localeCompare(b.name);
+});
+console.log(resArr3);
+// Output: -[
+// 	{ name: "Jane", age: 22 },
+// 	{ name: "John", age: 20 },
+// 	{ name: "John", age: 25 },
+// 	{ name: "Peter", age: 30 },
+// ];
+
+// Sorting by Multiple Properties
+
+const arr3 = [
+	{ name: "John", age: 25 },
+	{ name: "Jane", age: 22 },
+	{ name: "Peter", age: 30 },
+	{ name: "John", age: 20 },
+];
+
+const resArr3 = arr3.sort((a, b) => {
+	if (a.name === b.name) {
+		return a.age - b.age;
+	}
+	return a.name.localeCompare(b.name);
+});
+console.log(resArr3);
+// Output: -[
+// 	{ name: "Jane", age: 22 },
+// 	{ name: "John", age: 20 },
+// 	{ name: "John", age: 25 },
+// 	{ name: "Peter", age: 30 },
+// ];
+
+// Sorting by Multiple Properties
+
+const arr3 = [
+	{ name: "John", age: 25 },
+	{ name: "Jane", age: 22 },
+	{ name: "Peter", age: 30 },
+	{ name: "John", age: 20 },
+];
+
+const resArr3 = arr3.sort((a, b) => {
+	if (a.name === b.name) {
+		return a.age - b.age;
+	}
+	return a.name.localeCompare(b.name);
+});
+console.log(resArr3);
+// Output: -[
+// 	{ name: "Jane", age: 22 },
+// 	{ name: "John", age: 20 },
+// 	{ name: "John", age: 25 },
+// 	{ name: "Peter", age: 30 },
+// ];
