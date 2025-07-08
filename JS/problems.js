@@ -109,21 +109,26 @@ console.log("--------------------------------------------------------");
 // ];
 // const b = [{ name: "sai" }, { name: "Nang" }, { name: "111111" }];
 
-async function fetchWeatherData() {
-	const api1Promise = fetch("https://api.weather.com/data");
-	const api2Promise = fetch("https://api.openweathermap.org/data");
-	const api3Promise = fetch("https://api.weatherapi.com/data");
+// async function fetchWeatherData() {
+// 	const api1Promise = fetch("https://api.weather.com/data");
+// 	const api2Promise = fetch("https://api.openweathermap.org/data");
+// 	const api3Promise = fetch("https://api.weatherapi.com/data");
 
-	try {
-		const resultData = await Promise.any([
-			api1Promise,
-			api2Promise,
-			api3Promise,
-		]);
-		console.log("Result data:", resultData);
-	} catch (error) {
-		console.error("Error fetching weather data:", error);
-	}
-}
+// 	try {
+// 		const resultData = await Promise.any([
+// 			api1Promise,
+// 			api2Promise,
+// 			api3Promise,
+// 		]);
+// 		console.log("Result data:", resultData);
+// 	} catch (error) {
+// 		console.error("Error fetching weather data:", error);
+// 	}
+// }
 
-fetchWeatherData();
+// fetchWeatherData();
+console.log("--------------------------------------------------------");
+
+// 5. Find the max count of consecutive 1’s in an array ?
+
+// const inputArray = [1, 1, 0, 1, 1, 1, 0, 1, 1];

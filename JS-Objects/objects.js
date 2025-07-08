@@ -136,7 +136,7 @@ myMotherA :  PersonA {
 PersonA.prototype.nationality = "English";
 console.log("myFatherA : ", myFatherA.nationality);
 // Output: myFatherA :  English
-const myFatherB = new PersonA("John", "Doe", 50, "blue", "None");
+const myFatherB = new PersonA("John", "Doe", 50, "blue");
 console.log("myFatherB : ", myFatherB);
 console.log("myFatherB : ", myFatherB.nationality);
 
