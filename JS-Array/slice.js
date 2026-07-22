@@ -9,6 +9,8 @@ console.log("colors : ", colors);
 const removeFirst = colors.slice(1);
 console.log("removeFirst : ", removeFirst);
 // Output: removeFirst :  [ 'Green', 'Blue', 'Purple' ]
+console.log("Original colors after slice: ", colors);
+// Original colors after slice:  [ 'Red', 'Green', 'Blue', 'Purple' ]
 
 const removeFirstTwoItems = colors.slice(2);
 console.log("removeFirstTwoItems : ", removeFirstTwoItems);

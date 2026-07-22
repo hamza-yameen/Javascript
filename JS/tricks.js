@@ -1,6 +1,7 @@
 // Currying
 
 const applyDiscount = (discount) => (price) => price - (price * discount) / 100;
+
 const tenPercentOff = applyDiscount(10);
 const twentyPercentOff = applyDiscount(20);
 console.log("Apply 10% Discount : ", tenPercentOff(100)); //Output: Apply 10% Discount :  90
@@ -14,11 +15,15 @@ console.log("---------------------------------------------- 1 ");
 
 function simpleTag(strings, ...values) {
 	console.log("String : ", strings);
+	// String :  [ 'Hello, my name is ', ' and I am ', ' years old.' ]
 	console.log("Values : ", values);
+	// Values :  [ 'John', 30 ]
+
 	return strings.reduce((result, string, i) => {
 		return result + string + (values[i] || " ");
 	}, "");
 }
+
 const name = "John";
 const age = 30;
 

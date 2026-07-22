@@ -31,7 +31,18 @@ const resultB = cylinderA.volume.call(finalPiValue, 2, 4);
 console.log("resultB - Call: ", resultB);
 // Output: resultB - Call:  50.26544
 
+
 console.log("---------------------------------------------- 3");
+
+function ask(question, hobby) {
+	console.log(this.name + ", " + question + " " + hobby);
+}
+
+const person = { name: "Hamza" };
+ask.call(person, "How are you?", "coding");
+// Hamza, How are you? coding
+
+console.log("---------------------------------------------- 4");
 
 const cylinderB = {
 	pi: 3.14,
@@ -44,7 +55,7 @@ const resultC = cylinderB.volume.apply(finalPiValue, [2, 4]);
 console.log("resultC - APPLY: ", resultC);
 //Output: resultC - APPLY:  50.26544
 
-console.log("---------------------------------------------- 4");
+console.log("---------------------------------------------- 5");
 
 const cylinderC = {
 	pi: 3.14,
@@ -59,7 +70,7 @@ const resultD = cylinderC.volume.apply(finalPiValue, [2, 4]);
 console.log("resultD - APPLY: ", resultD);
 // Output: resultD - APPLY:  50.26544
 
-console.log("---------------------------------------------- 5");
+console.log("---------------------------------------------- 6");
 
 const cylinderD = {
 	pi: 3.14,
@@ -71,6 +82,7 @@ const cylinderD = {
 const callBindMethod = cylinderD.volume.bind(finalPiValue);
 const resultE = callBindMethod(2, 4);
 console.log("resultE - Bind : ", resultE);
+// resultE - Bind :  50.26544
 
 console.log("---------------------------------------------- 6");
 
@@ -91,3 +103,4 @@ const pokeMonName = function (snack, hobby) {
 
 const bindMethod = pokeMonName.bind(pokemon);
 bindMethod("sushi", "algorithms");
+// Pika Chu snack is sushi and hobby is algorithms
